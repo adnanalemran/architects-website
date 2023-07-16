@@ -1,18 +1,23 @@
 /* Importing a font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-/* share style */
+/* Share style */
 * {
   font-family: 'Work Sans', sans-serif;
 }
 
 .btn-primary {
+  border-radius: 8px;
+  background: #FF900E;
   color: #fff;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
 }
 
 /* Header style */
-
-/* Styling the header element */
 header {
   background: rgba(255, 144, 14, 0.10);
   padding: 50px 240px;
@@ -25,19 +30,19 @@ nav {
   align-items: center;
 }
 
-nav>ul {
+nav ul {
   display: flex;
   align-items: center;
 }
 
-nav>ul>li {
+nav ul li {
   list-style: none;
   margin-right: 30px;
   font-weight: 500;
   font-size: 1rem;
 }
 
-nav>ul>li>a {
+nav ul li a {
   text-decoration: none;
   color: #424242;
 }
@@ -52,10 +57,10 @@ nav>ul>li>a {
 .banner-content {
   max-width: 800px;
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-.Banner-title {
+.banner-title {
   font-size: 4rem;
   font-weight: 700;
   color: #131313;
@@ -63,4 +68,31 @@ nav>ul>li>a {
 
 .banner-description {
   color: #727272;
+}
+
+.banner img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Responsive media queries */
+/* Mobile devices */
+@media screen and (max-width: 567px) {
+  header {
+    padding: 20px 10px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* Tablet devices */
+@media screen and (min-width: 568px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
 }
