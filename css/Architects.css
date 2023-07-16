@@ -1,40 +1,66 @@
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+/* Importing a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-  * {
-      font-family: 'Work Sans', sans-serif;
-  }
+/* share style */
+* {
+  font-family: 'Work Sans', sans-serif;
+}
 
-  /* header style */
+.btn-primary {
+  color: #fff;
+}
 
-  header {
-      background: rgba(255, 144, 14, 0.10);
-      padding: 50px 240px;
-  }
+/* Header style */
 
-  nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
+/* Styling the header element */
+header {
+  background: rgba(255, 144, 14, 0.10);
+  padding: 50px 240px;
+}
 
-  nav>ul {
-      display: flex;
-      align-items: center;
+/* Styling the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
+nav>ul {
+  display: flex;
+  align-items: center;
+}
 
-  nav>ul>li {
-      list-style: none;
-      margin-right: 30px;
-      font-weight: 500;
-      font-size: 1rem;
-  }
-  nav>ul>li>a{
-    text-decoration: none;
-    color: #424242;
-  }
-  .nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
-  }
+nav>ul>li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  color: #424242;
+}
+
+.nav-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+/* Banner style */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.Banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.banner-description {
+  color: #727272;
+}
